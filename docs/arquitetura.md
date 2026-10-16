@@ -16,23 +16,27 @@ sequenceDiagram
 
 ## Evidência do DNS
 
-C:\Users\Aluno>nslookup github.com
-Servidor:  ns3.uninove.br
-Address:  186.251.39.123
+```mermaid
+    C:\Users\Aluno>nslookup github.com
+    Servidor:  ns3.uninove.br
+    Address:  186.251.39.123
 
-Não é resposta autoritativa:
-DNS request timed out.
+    Não é resposta autoritativa:
+    DNS request timed out.
     timeout was 2 seconds.
-Nome:    github.com
-Address:  4.228.31.150
+    Nome:    github.com
+    Address:  4.228.31.150
+```
 
 ## Evidência do HTTP
 
-Método,Recurso,Status
-GET,/https://github.com,200
-GET,/index-D-S89MAN.css,200
-GET,/LabelPicker-Dg-Vp9nY.js,200
-GET,/pagina-que-nao-existe,404
+```mermaid
+    Método,Recurso,Status
+    GET,/https://github.com,200
+    GET,/index-D-S89MAN.css,200
+    GET,/LabelPicker-Dg-Vp9nY.js,200
+    GET,/pagina-que-nao-existe,404
+````
 
 ## Por que o formulário de agendamento precisa de HTTPS
 
