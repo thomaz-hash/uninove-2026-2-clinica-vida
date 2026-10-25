@@ -1,0 +1,27 @@
+@model ClinicaVida.Web.Models.Medico
+@{
+    ViewData["Title"] = "Detalhes do Médico";
+}
+
+<h1>Detalhes do Médico</h1>
+
+<div class="card mt-4">
+    <div class="card-header bg-primary text-white">
+        <h4 class="mb-0">@Model.Nome</h4>
+    </div>
+    <div class="card-body">
+        <p class="card-text"><strong>CRM:</strong> @Model.Crm</p>
+        <p class="card-text">
+            <strong>Especialidade:</strong> 
+            @(Model.Especialidade?.Nome ?? "Não informada")
+        </p>
+        @if (Model.Especialidade != null)
+        {
+            <p class="card-text"><strong>Descrição da Área:</strong> @Model.Especialidade.Descricao</p>
+        }
+    </div>
+</div>
+
+<div class="mt-3">
+    <a href="/Medicos" class="btn btn-secondary">Voltar para a lista</a>
+</div>

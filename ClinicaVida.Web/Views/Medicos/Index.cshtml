@@ -1,0 +1,29 @@
+@model IEnumerable<Medico>
+@{
+    ViewData["Title"] = "Corpo clínico";
+}
+
+<h2>Corpo clínico da Clínica Vida+</h2>
+
+<form method="get">
+    <label for="especialidadeId">Especialidade</label>
+    <select id="especialidadeId" name="especialidadeId">
+        <option value="">Todas as especialidades</option>
+        @foreach (var e in (List<Especialidade>)ViewBag.Especialidades)
+        {
+            <option value="@e.Id">@e.Nome</option>
+        }
+    </select>
+    <button type="submit">Filtrar</button>
+</form>
+
+<p>@Model.Count() médico(s) na lista.</p>
+
+<ul>
+@foreach (var medico in Model)
+{
+    <li>
+        <a href="/Medicos/Details/@medico.Id">@medico.Nome</a>, CRM @medico.Crm
+    </li>
+}
+</ul>
