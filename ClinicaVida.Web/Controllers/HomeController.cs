@@ -16,6 +16,13 @@ public class HomeController : Controller
         return View();
     }
 
+    // Action da página institucional criada no passo anterior
+    public IActionResult Sobre()
+    {
+        ViewData["Title"] = "Sobre a Clínica Vida+";
+        return View();
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {

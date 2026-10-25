@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ClinicaVida.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+26fb2852d7dc08b2a2e210249782c294e628f60d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+218e1f451cb3031cf10910b2807fd8259bdba6cb")]
 [assembly: System.Reflection.AssemblyProductAttribute("ClinicaVida.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ClinicaVida.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
